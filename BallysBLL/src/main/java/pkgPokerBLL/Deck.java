@@ -15,12 +15,11 @@ public class Deck {
 	public Deck()
 	{
 		for (eRank Rank : eRank.values()) {
-			for (eSuit Suit : eSuit.values()) {
-				Card card = new Card(Rank,Suit);
-				DeckCards.add(card);
+			for (eSuit suit: eSuit.values()){
+				DeckCards.add(new Card(Rank,suit));
 			}
-			System.out.println(Rank.getiRankNbr());
 		}
+		
 		Collections.shuffle(DeckCards);
 	}
 	

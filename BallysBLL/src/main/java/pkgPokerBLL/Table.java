@@ -13,9 +13,9 @@ public class Table {
 		TableID = UUID.randomUUID();
 	}
 	
-	public Table AddPlayerToTable(Player p)
+	public void AddPlayerToTable(Player p)
 	{
+	
 		TablePlayers.add(p);
-		return this;
 	}
 }
